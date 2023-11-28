@@ -1,0 +1,15 @@
+<div>
+  <mat-form-field>
+    <label for="phoneNumber">Phone Number:</label>
+    <input matInput type="text" id="phoneNumber" [(ngModel)]="phoneNumber" />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="sendCode()">Send Code</button>
+
+  <mat-form-field>
+    <label for="verificationCode">Verification Code:</label>
+    <input matInput type="text" id="verificationCode" [(ngModel)]="verificationCode" />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="verifyCode()">Verify Code</button>
+</div>
